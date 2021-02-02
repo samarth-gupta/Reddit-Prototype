@@ -52,6 +52,14 @@ public class Content{
         this.user = user;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public Long getParentId() {
         return parentId;
     }

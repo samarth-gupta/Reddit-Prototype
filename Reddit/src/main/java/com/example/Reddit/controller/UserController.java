@@ -27,7 +27,7 @@ public class UserController {
                 .orElseThrow( () -> new RuntimeException("User not found with id : "+userId));
     }
 
-    @PostMapping
+    @PostMapping("/create")
     public User createUser(@RequestBody User user){
         return this.userRepository.save(user);
     }

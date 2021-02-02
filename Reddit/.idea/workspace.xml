@@ -5,26 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d163f663-8f0d-47ef-89af-0d6c60e01ee9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_3_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_test_5_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_3_6_RELEASE.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Reddit/services/CommunityServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reddit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Reddit.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Reddit/controller/CommunityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Reddit/controller/CommunityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Reddit/controller/ContentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Reddit/controller/ContentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Reddit/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Reddit/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Reddit/model/Community.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Reddit/model/Community.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Reddit/model/Content.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Reddit/model/Content.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Reddit/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Reddit/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/Reddit/controller/CommunityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Reddit/controller/CommunityController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Reddit/controller/ContentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Reddit/controller/ContentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Reddit/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Reddit/controller/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/Reddit/model/Community.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Reddit/model/Community.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Reddit/model/Content.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Reddit/model/Content.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Reddit/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Reddit/model/User.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -65,6 +57,11 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.Reddit" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="RedditApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -107,5 +104,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Reddit$RedditApplication.ic" NAME="RedditApplication Coverage Results" MODIFIED="1612265589757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.Reddit.*</FILTER>
+    </SUITE>
   </component>
 </project>

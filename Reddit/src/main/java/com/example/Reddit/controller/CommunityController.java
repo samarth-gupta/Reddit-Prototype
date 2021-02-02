@@ -2,6 +2,7 @@ package com.example.Reddit.controller;
 
 import com.example.Reddit.model.Community;
 import com.example.Reddit.repository.CommunityRepository;
+import com.example.Reddit.services.CommunityServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,6 +14,9 @@ public class CommunityController {
 
     @Autowired
     private CommunityRepository communityRepository;
+
+    @Autowired
+    private CommunityServices communityServices;
 
     // get all
     @GetMapping
@@ -27,7 +31,7 @@ public class CommunityController {
                 .orElseThrow( () -> new RuntimeException("User not found with id : "+communityId));
     }
 
-    @PostMapping
+    @PostMapping("/create")
     public Community createCommunity(@RequestBody Community community){
         return this.communityRepository.save(community);
     }
@@ -35,6 +39,11 @@ public class CommunityController {
     @GetMapping("/test")
     public String test(){
         return "Community api endpoint works!";
+    }
+
+    @GetMapping("/follow/{userId}/{communityId}")
+    public String followCommunity(@PathVariable("userId") Long userId,@PathVariable("communityId") Long communityId){
+        return this.communityServices.followCommunity(userId,communityId);
     }
 
 }

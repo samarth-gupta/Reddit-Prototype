@@ -32,6 +32,7 @@ public class Community {
             joinColumns = @JoinColumn(name = "community_id"),
             inverseJoinColumns = @JoinColumn(name = "user_id")
     )
+
     private List<User> communityUsers;
 
     @OneToMany(mappedBy = "community", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
@@ -47,6 +48,15 @@ public class Community {
         this.upvotes = upvotes;
         this.communityUsers = communityUsers;
         this.communityPosts = communityPosts;
+    }
+
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getTitle() {
