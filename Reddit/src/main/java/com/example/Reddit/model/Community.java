@@ -39,4 +39,61 @@ public class Community {
 
     public Community() {
     }
+
+    public Community(String title, Date createdAt, String description, Long upvotes, List<User> communityUsers, List<Content> communityPosts) {
+        this.title = title;
+        CreatedAt = createdAt;
+        Description = description;
+        this.upvotes = upvotes;
+        this.communityUsers = communityUsers;
+        this.communityPosts = communityPosts;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public Date getCreatedAt() {
+        return CreatedAt;
+    }
+
+    public void setCreatedAt(Date createdAt) {
+        CreatedAt = createdAt;
+    }
+
+    public String getDescription() {
+        return Description;
+    }
+
+    public void setDescription(String description) {
+        Description = description;
+    }
+
+    public Long getUpvotes() {
+        return upvotes;
+    }
+
+    public void setUpvotes(Long upvotes) {
+        this.upvotes = upvotes;
+    }
+
+    public List<User> getCommunityUsers() {
+        return communityUsers;
+    }
+
+    public void setCommunityUsers(List<User> communityUsers) {
+        this.communityUsers = communityUsers;
+    }
+
+    public List<Content> getCommunityPosts() {
+        return communityPosts;
+    }
+
+    public void setCommunityPosts(List<Content> communityPosts) {
+        this.communityPosts = communityPosts;
+    }
 }

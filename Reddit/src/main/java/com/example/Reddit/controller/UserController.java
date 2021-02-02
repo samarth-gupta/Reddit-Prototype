@@ -22,10 +22,19 @@ public class UserController {
 
     // get by id
     @GetMapping("/{id}")
-    public User getUserById(@PathVariable(value = "id") Long UserId){
-        return this.userRepository.findById(UserId)
-                .orElseThrow( () -> new RuntimeException("User not found with id : "+UserId));
+    public User getUserById(@PathVariable(value = "id") Long userId){
+        return this.userRepository.findById(userId)
+                .orElseThrow( () -> new RuntimeException("User not found with id : "+userId));
     }
 
+    @PostMapping
+    public User createUser(@RequestBody User user){
+        return this.userRepository.save(user);
+    }
+
+    @GetMapping("/test")
+    public String test(){
+        return "User api endpoint works!";
+    }
 
 }

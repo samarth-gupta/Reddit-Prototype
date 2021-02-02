@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("Content")
+@RequestMapping("/api/content")
 public class ContentController{
 
     private ContentRepository contentRepository;
@@ -28,7 +28,7 @@ public class ContentController{
 
     @GetMapping("/test")
     public String test(){
-        return "Hello World";
+        return "Content api endpoint works!";
     }
 
 }

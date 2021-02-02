@@ -40,4 +40,81 @@ public class User {
     @ManyToMany(mappedBy = "following")
     private List<User> followers;
 
+    public User() {
+    }
+
+    public User(String username, String firstName, String lastName, String email, List<Content> userPosts, List<Community> userCommunities, List<User> following, List<User> followers) {
+        this.username = username;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.userPosts = userPosts;
+        this.userCommunities = userCommunities;
+        this.following = following;
+        this.followers = followers;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public List<Content> getUserPosts() {
+        return userPosts;
+    }
+
+    public void setUserPosts(List<Content> userPosts) {
+        this.userPosts = userPosts;
+    }
+
+    public List<Community> getUserCommunities() {
+        return userCommunities;
+    }
+
+    public void setUserCommunities(List<Community> userCommunities) {
+        this.userCommunities = userCommunities;
+    }
+
+    public List<User> getFollowing() {
+        return following;
+    }
+
+    public void setFollowing(List<User> following) {
+        this.following = following;
+    }
+
+    public List<User> getFollowers() {
+        return followers;
+    }
+
+    public void setFollowers(List<User> followers) {
+        this.followers = followers;
+    }
 }
